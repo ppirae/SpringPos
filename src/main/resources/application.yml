@@ -1,0 +1,6 @@
+spring:
+  datasource:
+      url: jdbc:mysql://localhost/javaPos?characterEncoding=utf8&amp
+      username: root
+      password: 1234
+      river-class-name: com.mysql.cj.jdbc.Driver

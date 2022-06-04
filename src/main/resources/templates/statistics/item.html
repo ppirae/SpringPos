@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header"/>
+<body>
+<div class="container">
+    <div th:replace="fragments/bodyHeader :: bodyHeader"/>
+    <div>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>최다 판매 제품(개수)</th>
+                <th>판매 수량</th>
+                <th>총 판매액</th>
+            </tr>
+            </thead>
+            <tbody>
+                <td th:text="${statisticsService.bestSaleItemName()}"></td>
+                <td th:text="|${statisticsService.bestSaleItemTotalCount()}개|"></td>
+                <td th:text="|${statisticsService.bestSaleItemTotalPrice()}원|"></td>
+            </tbody>
+        </table>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>최고 금액 판매 제품</th>
+                <th>판매 수량</th>
+                <th>총 판매액</th>
+            </tr>
+            </thead>
+            <tbody>
+            <td th:text="${statisticsService.bestMoneyItemName()}"></td>
+            <td th:text="|${statisticsService.bestMoneyItemTotalCount()}개|"></td>
+            <td th:text="|${statisticsService.bestMoneyItemTotalPrice()}원|"></td>
+            </tbody>
+        </table>
+    </div>
+    <div th:replace="fragments/footer :: footer"/>
+</div> <!-- /container -->
+</body>
+</html>

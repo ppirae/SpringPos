@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header"/>
+<body>
+<div class="container">
+    <div th:replace="fragments/bodyHeader :: bodyHeader"/>
+    <div>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>하루 매출액</th>
+            </tr>
+            </thead>
+            <tbody>
+                <td th:text="|${statisticsService.totalSalePriceToday()}원|"></td>
+            </tbody>
+        </table>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>일주일 매출액</th>
+            </tr>
+            </thead>
+            <tbody>
+                <td th:text="|${statisticsService.totalSalePriceThisWeek()}원|"></td>
+            </tbody>
+        </table>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>한달 매출액</th>
+            </tr>
+            </thead>
+            <tbody>
+            <td th:text="|${statisticsService.totalSalePriceThisMonth()}원|"></td>
+            </tbody>
+        </table>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>총 매출액</th>
+            </tr>
+            </thead>
+            <tbody>
+            <td th:text="|${statisticsService.totalSalePriceAll()}원|"></td>
+            </tbody>
+        </table>
+    </div>
+    <div th:replace="fragments/footer :: footer"/>
+</div> <!-- /container -->
+</body>
+</html>
