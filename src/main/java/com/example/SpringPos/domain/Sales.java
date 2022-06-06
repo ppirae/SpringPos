@@ -24,7 +24,6 @@ public class Sales {
     private Integer saleQuantity;
     private Integer totalPrice;
     private Timestamp SalesTime;
-    //private String payment;
 
     public Sales(Long itemId, String itemName, Integer itemPrice, Integer saleQuantity, Integer totalPrice, Timestamp salesTime) {
         this.itemId = itemId;
@@ -33,6 +32,5 @@ public class Sales {
         this.saleQuantity = saleQuantity;
         this.totalPrice = totalPrice;
         this.SalesTime = salesTime;
-        //this.payment = payment;
     }
 }

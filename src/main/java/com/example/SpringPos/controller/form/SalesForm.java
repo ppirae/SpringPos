@@ -14,6 +14,4 @@ public class SalesForm {
     @NotNull(message = "필수 항목입니다.")
     @Min(1)
     private int count;
-
-    //private String payment;
 }

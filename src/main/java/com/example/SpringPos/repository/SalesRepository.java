@@ -1,6 +1,5 @@
 package com.example.SpringPos.repository;
 
-import com.example.SpringPos.domain.Item;
 import com.example.SpringPos.domain.Sales;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;

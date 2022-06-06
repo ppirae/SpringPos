@@ -1,8 +1,6 @@
 package com.example.SpringPos.controller.form;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
